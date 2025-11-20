@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Umeshpoojariaws/helm-common.git
+    repoURL: https://github.com/Umeshpoojariaws/gitops-repo.git
     targetRevision: HEAD
-    path: charts/helm-common
+    path: helm-charts
     helm:
       valueFiles:
         - # Placeholder for environment-specific values file
