@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: REPLACE_APP_NAME-REPLACE_ENV
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/Umeshpoojariaws/helm-common.git
+    targetRevision: HEAD
+    path: charts/helm-common
+    helm:
+      valueFiles:
+        - # Placeholder for environment-specific values file
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: REPLACE_ENV
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
