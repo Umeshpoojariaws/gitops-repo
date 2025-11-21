@@ -7,7 +7,7 @@ patches:
     group: argoproj.io
     version: v1alpha1
     kind: Application
-    name: REPLACE_APP_NAME-REPLACE_ENV # Target the placeholder name in the base
+    name: hello-gitops-dev # Target the placeholder name in the base
   patch: |-
     - op: replace
       path: /metadata/name
