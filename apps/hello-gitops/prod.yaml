@@ -1,3 +1,0 @@
-replicaCount: 2
-image:
-  tag: "20251120091253" # This will be updated by the CI/CD pipeline
